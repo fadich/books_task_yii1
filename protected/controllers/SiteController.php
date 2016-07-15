@@ -110,13 +110,14 @@ class SiteController extends Controller
             $model->attributes = $_POST['User'];
             if (User::model()->find('email=?', array($model->email))) {
                 Yii::app()->user->setFlash('registration', 'Данный адрес электронной почты уже используется.');
-            } elseif ($model->updateUser($model)) {
+            } elseif ($model->validate() && $model->updateUser($model)) {
                 $this->redirect('login');
             } else {
                 Yii::app()->user->setFlash('registration', 'Ошибка регистрации.');
             }
         }
-        $model->password = '';
+
+        $model->password = null;
         $this->render('signup', array('model' => $model));
     }
 }

@@ -557,3 +557,66 @@ Stack trace:
 REQUEST_URI=/books_task/index.php/site/signup
 HTTP_REFERER=http://localhost/books_task/index.php/site/signup
 ---
+2016/07/15 16:34:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "task/index". in /var/www/html/task_books_yii1/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('task/index')
+#1 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/html/books_task/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/books_task/index.php/task/index
+HTTP_REFERER=http://localhost/books_task/index.php/site/index
+---
+2016/07/15 23:30:44 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "task/index". in /var/www/html/task_books_yii1/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('task/index')
+#1 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/html/books_task/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/books_task/index.php/task/index
+HTTP_REFERER=http://localhost/books_task/index.php/site/signup
+---
+2016/07/16 00:00:51 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "task/index". in /var/www/html/task_books_yii1/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('task/index')
+#1 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/html/books_task/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/books_task/index.php/task/index
+HTTP_REFERER=http://localhost/books_task/index.php/site/index
+---
+2016/07/16 00:05:45 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "task/index". in /var/www/html/task_books_yii1/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('task/index')
+#1 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/html/books_task/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/books_task/index.php/task/index
+HTTP_REFERER=http://localhost/books_task/index.php/site/index
+---
+2016/07/16 00:06:09 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "task/index". in /var/www/html/task_books_yii1/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('task/index')
+#1 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/html/books_task/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/books_task/index.php/task/index
+HTTP_REFERER=http://localhost/books_task/index.php
+---
+2016/07/16 00:06:13 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "task/index". in /var/www/html/task_books_yii1/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('task/index')
+#1 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/html/books_task/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/books_task/index.php/task/index
+HTTP_REFERER=http://localhost/books_task/index.php
+---
+2016/07/16 00:06:23 [error] [exception.CHttpException.404] CHttpException: Невозможно обработать запрос "task/index". in /var/www/html/task_books_yii1/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('task/index')
+#1 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/html/books_task/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/books_task/index.php/task/index
+HTTP_REFERER=http://localhost/books_task/index.php
+---

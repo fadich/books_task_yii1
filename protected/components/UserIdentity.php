@@ -20,7 +20,7 @@ class UserIdentity extends CUserIdentity
 	public function authenticate()
 	{
 		$user = User::model()->find('email=?', array($this->username));
-		if(($user === null) || md5('somesting' . $this->password) !== $user->password){
+		if(($user === null) || md5('somestring' . $this->password) !== $user->password){
 			$this->errorCode = self::ERROR_USERNAME_INVALID;
 		} else {
 			$this->_id = $user->id;

@@ -44,7 +44,7 @@ class User extends CActiveRecord
 		return array(
 			array('email, password', 'required'),
 			array('status, created_at, updated_at', 'numerical', 'integerOnly'=>true),
-			array('email, password', 'length', 'max'=>32),
+			array('email, password', 'length', 'max'=>32, 'min' => 6),
 			array('email', 'email'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -104,7 +104,7 @@ class User extends CActiveRecord
 	public function updateUser(User $user)
 	{
 		$user->email = $this->email;
-		$user->password = md5('somesting' . $this->password);
+		$user->password = md5('somestring' . $this->password);
 		$user->status = self::STATUS_ACTIVE;
 		$user->created_at = time();
 		$user->updated_at = time();

@@ -5,11 +5,15 @@
 
 $this->pageTitle=Yii::app()->name . ' - Signup';
 $this->breadcrumbs=array(
-    'Login' => 'Login',
-    'Signup',
-);
+    'Логин' => 'Login',
+    'Регистрация',
+); ?>
 
-if (Yii::app()->user->hasFlash('registration')): ?>
+<h1>Регистрация</h1>
+
+<p>Пожалуйста, введите Ваши учетные данные:</p>
+
+<?php if (Yii::app()->user->hasFlash('registration')): ?>
     <div class="flash-error">
         <?php echo Yii::app()->user->getFlash('registration'); ?>
     </div>
@@ -22,7 +26,7 @@ if (Yii::app()->user->hasFlash('registration')): ?>
         'enableAjaxValidation' => false,
     )); ?>
 
-    <p class="note">Fields with <span class="required">*</span> are required.</p>
+    <p class="note">Поля, помеченные звездочкой (<span class="required">*</span>), обязательные к заполнению.</p>
 
     <?php echo $form->errorSummary($model); ?>
 
