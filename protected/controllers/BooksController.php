@@ -37,9 +37,22 @@ class BooksController extends Controller
 
         if (isset($_POST['Book'])) {
             $model->attributes = $_POST['Book'];
+            $model->image = CUploadedFile::getInstance($model,'image');
+            $path = Yii::getPathOfAlias('webroot').'/protected/uploads/'.$model->id . $model->image;
+            if($model->image != null) {
+                if($model->image->saveAs($path)){
+                    if($model->preview != false && $model->image != false){
+                        unlink($model->preview);
+                    }
+                    $model->preview = $path;
+                }
+            }
             if ($model->validate() && $model->updateBook($model)) {
+//                if($model->image != null) {
+//                    $model->image->saveAs($path);
+//                }
                 Yii::app()->user->setFlash('bookSuccess', 'Данные о книге "' . $model->name . '" успешно сохранены.');
-                $this->redirect('edit?id=' . $model->id);
+                $this->redirect($model->id);
             } else {
                 Yii::app()->user->setFlash('bookError', 'Ошибка записи.');
             }
@@ -54,7 +67,9 @@ class BooksController extends Controller
     {
         if (isset($_GET['id'])){
             $model = Book::model()->findByPk($_GET['id']);
-            $model->deleteBook();
+            if(isset($model->id)){
+                $model->deleteBook();
+            }
         }
 
         $this->redirect('/books_task/index.php/books/index');

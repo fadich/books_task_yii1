@@ -66,7 +66,8 @@ $this->breadcrumbs = array(
     </div>
     <?php $this->endWidget(); ?>
 
-    <?php $books = $model->findAllByAttributes(array('status' => Book::STATUS_ACTIVE)); ?>
+    <?php $books = $model->findAllByAttributes(array('status' => Book::STATUS_ACTIVE));
+    $i = 0; ?>
     <table border="1" rules="all" style="border: #0f0f0f">
         <tr style="background-color: #BBBBBB">
             <th width="3%">ID</th>
@@ -79,9 +80,60 @@ $this->breadcrumbs = array(
         </tr>
         <?php foreach ($books as $book): ?>
             <tr>
-                <td><?php echo $book->id ?></td>
+                <!--                <td>--><?php //echo $book->id ?><!--</td>-->    <!-- id в базе данных -->
+                <td><?php echo ++$i; ?></td>    <!-- Порядковый номер -->
                 <td><?php echo $book->name ?></td>
-                <td><?php echo $book->preview ?></td>
+                <td><?php if ($book->preview != false): ?>
+                        <style>
+                            .blokimg {
+                                position: relative;
+                            }
+
+                            .overlay {
+                                display: none;
+                                height: auto;
+                                left: -100%;
+                                position: absolute;
+                                top: -250%;
+                                width: auto;
+                                z-index: 999;
+                            }
+
+                            .overlay .overlay_container {
+                                display: table-cell;
+                                vertical-align: middle;
+                            }
+
+                            .overlay_container img {
+                                background-color: #FFFFFF;
+                                padding: 10px;
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                            }
+
+                            .overlay:target {
+                                display: table;
+                            }
+                        </style>
+                        <div class="blokimg">
+                            <div class="overlay" id="contenedor<?= $i ?>">
+                                <div class="overlay_container">
+                                    <a href=''>
+                                        <?php echo '<img src="' .
+                                            substr($book->preview, 13) . '" width="350px"/>' ?>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#contenedor<?= $i ?>">
+                                <?php echo '<img src="' .
+                                    substr($book->preview, 13) . '" id="imagenM1" width="75px"/>' ?>
+                            </a>
+                        </div>
+                        <?php
+                    else:
+                        echo 'Нет изображения...';
+                    endif;
+                    ?></td>
                 <td><?php echo $book->getAuthor()->firstname . ' ' . $book->getAuthor()->lastname ?></td>
                 <td><?php echo date('d F Y', $book->date) ?></td>
                 <td><?php echo date('d F Y', $book->date_create) ?></td>
@@ -113,7 +165,9 @@ $this->breadcrumbs = array(
                                 </td>
                                 <td><br>
                                     <?php echo CHtml::link('[удал]', '#',
-                                        array('submit' => array('delete', 'id' => $book->id), 'confirm' => 'Are you sure?')); ?>
+                                        array('submit' => array('delete', 'id' => $book->id),
+                                            'confirm' => 'Вы уверены, что хотите удалить книгу "' .
+                                                $book->name . '"?')); ?>
                                 </td>
                                 <?php $this->endWidget(); ?>
                             </div>
@@ -124,3 +178,9 @@ $this->breadcrumbs = array(
         <?php endforeach; ?>
     </table>
 </div>
+
+
+<script>
+    function showImage() {
+    }
+</script>

@@ -1423,3 +1423,2145 @@ Stack trace:
 REQUEST_URI=/books_task/index.php/books/delete/9
 HTTP_REFERER=http://localhost/books_task/index.php/books/index
 ---
+2016/07/16 18:03:34 [error] [exception.Error] Error: Call to a member function deleteBook() on null in /var/www/html/books_task/protected/controllers/BooksController.php:57
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionDelete()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('delete')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/delete')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/delete/12
+---
+2016/07/16 18:53:24 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:41
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 18:55:14 [error] [exception.Error] Error: Call to a member function getName() on null in /var/www/html/books_task/protected/controllers/BooksController.php:41
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 18:57:02 [error] [exception.Error] Error: Call to a member function getName() on null in /var/www/html/books_task/protected/controllers/BooksController.php:41
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 18:57:43 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 18:57:43 [error] [exception.Error] Error: Call to a member function getName() on null in /var/www/html/books_task/protected/controllers/BooksController.php:41
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 18:58:18 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 18:58:18 [error] [exception.Error] Error: Call to a member function getName() on null in /var/www/html/books_task/protected/controllers/BooksController.php:41
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 18:59:35 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 18:59:35 [error] [exception.Error] Error: Call to a member function getName() on null in /var/www/html/books_task/protected/controllers/BooksController.php:41
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 19:00:05 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:00:05 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 19:00:15 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:00:15 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 19:00:23 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:00:23 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 19:03:31 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:03:49 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:03:55 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:04:31 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:04:38 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:04:50 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:05:26 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:07:47 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 19:08:10 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:08:10 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 19:09:45 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:09:45 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 19:09:57 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:10:01 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:10:06 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:10:19 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:10:23 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:10:54 [error] [php] include(string.php): failed to open stream: No such file or directory (/var/www/html/task_books_yii1/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/validators/CValidator.php(186): import()
+#1 /var/www/html/task_books_yii1/framework/base/CModel.php(286): createValidator()
+#2 /var/www/html/task_books_yii1/framework/base/CModel.php(260): Book->createValidators()
+#3 /var/www/html/task_books_yii1/framework/base/CModel.php(303): Book->getValidators()
+#4 /var/www/html/task_books_yii1/framework/web/helpers/CHtml.php(1237): Book->isAttributeRequired()
+#5 /var/www/html/task_books_yii1/framework/web/widgets/CActiveForm.php(562): activeLabelEx()
+#6 /var/www/html/books_task/protected/views/books/edit.php(46): CActiveForm->labelEx()
+#7 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require()
+#8 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): BooksController->renderInternal()
+#9 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#11 /var/www/html/books_task/protected/controllers/BooksController.php(52): BooksController->render()
+#12 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#13 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#15 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#16 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#17 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit
+in /var/www/html/books_task/protected/views/books/edit.php (46)
+in /var/www/html/books_task/protected/controllers/BooksController.php (52)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:12:52 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:12:56 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:12:59 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:14:08 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:14:12 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:15:30 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:15:33 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:15:43 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:16:12 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:16:15 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:16:19 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:16:43 [error] [exception.Error] Error: Call to a member function saveAs() on string in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 19:16:49 [error] [exception.Error] Error: Call to a member function saveAs() on string in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 19:19:00 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:19:02 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:19:06 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:20:03 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:43
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:20:50 [warning] [application] Failed to set unsafe attribute "preview" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:20:50 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:43
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:20:57 [warning] [application] Failed to set unsafe attribute "preview" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:21:01 [warning] [application] Failed to set unsafe attribute "preview" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:21:06 [warning] [application] Failed to set unsafe attribute "preview" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:22:58 [error] [exception.Error] Error: Call to a member function saveAs() on string in /var/www/html/books_task/protected/controllers/BooksController.php:43
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:23:09 [warning] [application] Failed to set unsafe attribute "preview" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:23:09 [error] [exception.Error] Error: Call to a member function saveAs() on string in /var/www/html/books_task/protected/controllers/BooksController.php:43
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:23:14 [warning] [application] Failed to set unsafe attribute "preview" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:23:14 [error] [exception.Error] Error: Call to a member function saveAs() on string in /var/www/html/books_task/protected/controllers/BooksController.php:43
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:23:19 [warning] [application] Failed to set unsafe attribute "preview" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:23:19 [error] [exception.Error] Error: Call to a member function saveAs() on string in /var/www/html/books_task/protected/controllers/BooksController.php:43
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:23:47 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:23:47 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:43
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:24:02 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:24:02 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:43
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:25:00 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:25:00 [error] [php] Trying to get property of non-object (/var/www/html/books_task/protected/controllers/BooksController.php:41)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+in /var/www/html/books_task/protected/controllers/BooksController.php (41)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:25:07 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:25:07 [error] [php] Trying to get property of non-object (/var/www/html/books_task/protected/controllers/BooksController.php:41)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+in /var/www/html/books_task/protected/controllers/BooksController.php (41)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:25:32 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:25:32 [error] [php] Trying to get property of non-object (/var/www/html/books_task/protected/controllers/BooksController.php:41)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+in /var/www/html/books_task/protected/controllers/BooksController.php (41)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:26:16 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:26:16 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:26:20 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:26:20 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:26:33 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:26:33 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:26:37 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:26:37 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:26:55 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:26:55 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:27:00 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:27:00 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:27:04 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:27:04 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:42
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:27:15 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:27:19 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:28:24 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:28:28 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:28:33 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:29:29 [error] [exception.Error] Error: Call to a member function saveAs() on string in /var/www/html/books_task/protected/controllers/BooksController.php:44
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:29:35 [error] [exception.Error] Error: Call to a member function saveAs() on string in /var/www/html/books_task/protected/controllers/BooksController.php:44
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:31:09 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:31:13 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:31:18 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:31:33 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:31:36 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:31:38 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:31:43 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:32:16 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:44
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:32:19 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:44
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:33:13 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:33:13 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:44
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:33:18 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:33:18 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:44
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:33:38 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:33:38 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:44
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:33:49 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:33:52 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:34:22 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:34:25 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:35:36 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:36:04 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:36:06 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:36:08 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:36:16 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:36:18 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:36:27 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:36:39 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:37:13 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:37:13 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:44
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:37:29 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:37:29 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:44
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=13
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit?id=13
+---
+2016/07/16 19:37:42 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:38:08 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:38:17 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:38:36 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:38:51 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:38:55 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:39:10 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:39:53 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:40:02 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:40:08 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:40:14 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:41:47 [error] [php] Undefined index: image (/var/www/html/books_task/protected/views/books/edit.php:83)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#2 /var/www/html/books_task/protected/controllers/BooksController.php(53): BooksController->render()
+#3 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/views/books/edit.php (83)
+in /var/www/html/books_task/protected/controllers/BooksController.php (53)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:41:52 [error] [php] Undefined index: image (/var/www/html/books_task/protected/views/books/edit.php:83)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#2 /var/www/html/books_task/protected/controllers/BooksController.php(53): BooksController->render()
+#3 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/views/books/edit.php (83)
+in /var/www/html/books_task/protected/controllers/BooksController.php (53)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:42:01 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:43:12 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:43:26 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:43:26 [error] [exception.CException] CException: Property "CUploadedFile.extention" is not defined. in /var/www/html/task_books_yii1/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/books_task/protected/controllers/BooksController.php(44): CComponent->__get('extention')
+#1 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#6 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#7 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /var/www/html/books_task/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/books_task/index.php/books/edit/14
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit/14
+---
+2016/07/16 19:43:35 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:43:35 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:44
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit/14
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit/14
+---
+2016/07/16 19:43:41 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:43:41 [error] [exception.CException] CException: Property "CUploadedFile.extention" is not defined. in /var/www/html/task_books_yii1/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/books_task/protected/controllers/BooksController.php(44): CComponent->__get('extention')
+#1 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#6 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#7 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /var/www/html/books_task/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/books_task/index.php/books/edit/14
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit/14
+---
+2016/07/16 19:44:14 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:44:14 [error] [php] move_uploaded_file(/var/www/html/books_task/uploads/14The guy.jpg): failed to open stream: No such file or directory (/var/www/html/task_books_yii1/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (44)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:44:44 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:44:44 [error] [php] move_uploaded_file(/var/www/html/books_task/uploads/14unknown_world.jpg): failed to open stream: No such file or directory (/var/www/html/task_books_yii1/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (44)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:45:12 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:45:12 [error] [php] move_uploaded_file(/var/www/html/books_task/uploads/project/14The guy.jpg): failed to open stream: No such file or directory (/var/www/html/task_books_yii1/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (44)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:45:37 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:45:37 [error] [php] move_uploaded_file(/var/www/html/books_task/uploads/protected/14unknown_world.jpg): failed to open stream: No such file or directory (/var/www/html/task_books_yii1/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (44)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:45:54 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:46:42 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:46:57 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:46:57 [error] [exception.Error] Error: Call to a member function saveAs() on null in /var/www/html/books_task/protected/controllers/BooksController.php:44
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/books_task/index.php/books/edit/14
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit/14
+---
+2016/07/16 19:47:28 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:47:34 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:56:13 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:56:13 [error] [php] move_uploaded_file(/protected/uploads/14the_guy_colour_by_venom34.jpg): failed to open stream: No such file or directory (/var/www/html/task_books_yii1/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (45)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:56:27 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:56:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "protected". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('protected')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('protected')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/protected...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/protected/uploads/14the_guy_colour_by_venom34.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 19:56:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "protected". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('protected')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('protected')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/protected...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/protected/uploads/14the_guy_colour_by_venom34.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 19:59:05 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "protected". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('protected')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('protected')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/protected...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/protected/uploads/14the_guy_colour_by_venom34.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 19:59:05 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "protected". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('protected')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('protected')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/protected...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/protected/uploads/14the_guy_colour_by_venom34.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 19:59:18 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:59:18 [error] [php] unlink(protected/uploads/14Freljord_Wallpaper.jpg): No such file or directory (/var/www/html/books_task/protected/models/Book.php:121)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/models/Book.php (121)
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:59:54 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 19:59:54 [error] [php] unlink(/var/www/html/books_task/protected/uploads/14news_icon_2210.jpg): No such file or directory (/var/www/html/books_task/protected/models/Book.php:121)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/models/Book.php (121)
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:00:22 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:00:22 [error] [php] unlink(/var/www/html/books_task/protected/uploads/14news_icon_2210.jpg): No such file or directory (/var/www/html/books_task/protected/models/Book.php:121)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/models/Book.php (121)
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:00:49 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:01:27 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "html". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('html')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('html')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/html/book...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/html/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:01:27 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "html". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('html')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('html')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/html/book...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/html/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:03:08 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:03:17 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:03:17 [error] [php] move_uploaded_file(/books_task/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png): failed to open stream: No such file or directory (/var/www/html/task_books_yii1/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#5 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (48)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:04:16 [error] [exception.CException] CException: Property "Book.previw" is not defined. in /var/www/html/task_books_yii1/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/db/ar/CActiveRecord.php(143): CComponent->__get('previw')
+#1 /var/www/html/books_task/protected/views/books/index.php(86): CActiveRecord->__get('previw')
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#3 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#7 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#8 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#13 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/html/books_task/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:04:18 [error] [exception.CException] CException: Property "Book.previw" is not defined. in /var/www/html/task_books_yii1/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/db/ar/CActiveRecord.php(143): CComponent->__get('previw')
+#1 /var/www/html/books_task/protected/views/books/index.php(86): CActiveRecord->__get('previw')
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#3 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#7 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#8 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#13 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/html/books_task/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:04:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "protected". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('protected')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('protected')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/protected...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:04:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "protected". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('protected')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('protected')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/protected...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:04:35 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "protected". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('protected')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('protected')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/protected...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:04:35 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "protected". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('protected')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('protected')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/protected...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:04:38 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:04:38 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:04:39 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:04:51 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:04:52 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:05:15 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:05:15 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:05:21 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:05:21 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:05:37 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:05:37 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:05:39 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:05:39 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "k". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('k')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('k')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/k/protect...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/k/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:08:17 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:08:17 [error] [php] unlink(/books_task/protected/uploads/14tumblr_nihw59PqZR1t74yfco1_500.png): No such file or directory (/var/www/html/books_task/protected/controllers/BooksController.php:43)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:08:44 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:08:46 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ml". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('ml')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('ml')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/ml/books_...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/ml/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:08:46 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ml". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('ml')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('ml')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/ml/books_...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/ml/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:09:04 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ml". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('ml')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('ml')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/ml/books_...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/ml/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:09:04 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ml". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('ml')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('ml')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/ml/books_...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/ml/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:09:11 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ml". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('ml')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('ml')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/ml/books_...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/ml/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:09:12 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ml". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('ml')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('ml')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/ml/books_...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/ml/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:09:16 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ml". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('ml')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('ml')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/ml/books_...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/ml/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:09:16 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ml". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('ml')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('ml')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/ml/books_...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/ml/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:09:18 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ml". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('ml')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('ml')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/ml/books_...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/ml/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:09:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ml". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('ml')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('ml')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/ml/books_...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/ml/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:09:24 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "books_task". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('books_task')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('books_task')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/books_tas...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:09:24 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "books_task". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('books_task')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('books_task')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/books_tas...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:09:27 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "books_task". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('books_task')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('books_task')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/books_tas...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:09:27 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "books_task". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('books_task')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('books_task')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/books_tas...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/books_task/protected/uploads/14news_icon_2210.jpg
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:10:42 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:27:48 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbModal" is invalid. Make sure it points to an existing directory or file. in /var/www/html/task_books_yii1/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/html/task_books_yii1/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'bootstrap.widge...', Array)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/html/books_task/protected/views/books/index.php(147): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#9 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#15 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/books_task/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:28:08 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbModal" is invalid. Make sure it points to an existing directory or file. in /var/www/html/task_books_yii1/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/html/task_books_yii1/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'bootstrap.widge...', Array)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/html/books_task/protected/views/books/index.php(147): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#9 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#15 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/books_task/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:28:09 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbModal" is invalid. Make sure it points to an existing directory or file. in /var/www/html/task_books_yii1/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/html/task_books_yii1/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'bootstrap.widge...', Array)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/html/books_task/protected/views/books/index.php(147): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#9 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#15 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/books_task/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:28:10 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbModal" is invalid. Make sure it points to an existing directory or file. in /var/www/html/task_books_yii1/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/html/task_books_yii1/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'bootstrap.widge...', Array)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/html/books_task/protected/views/books/index.php(147): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#9 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#15 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/books_task/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:28:11 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbModal" is invalid. Make sure it points to an existing directory or file. in /var/www/html/task_books_yii1/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/html/task_books_yii1/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'bootstrap.widge...', Array)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/html/books_task/protected/views/books/index.php(147): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#9 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#15 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/books_task/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:28:11 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbModal" is invalid. Make sure it points to an existing directory or file. in /var/www/html/task_books_yii1/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/html/task_books_yii1/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'bootstrap.widge...', Array)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/html/books_task/protected/views/books/index.php(147): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#9 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#15 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/books_task/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:28:12 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbModal" is invalid. Make sure it points to an existing directory or file. in /var/www/html/task_books_yii1/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/html/task_books_yii1/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'bootstrap.widge...', Array)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/html/books_task/protected/views/books/index.php(147): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#9 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#15 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/books_task/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:28:12 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbModal" is invalid. Make sure it points to an existing directory or file. in /var/www/html/task_books_yii1/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/html/task_books_yii1/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'bootstrap.widge...', Array)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/html/books_task/protected/views/books/index.php(147): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#9 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#15 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/books_task/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:28:12 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbModal" is invalid. Make sure it points to an existing directory or file. in /var/www/html/task_books_yii1/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/html/task_books_yii1/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'bootstrap.widge...', Array)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/html/books_task/protected/views/books/index.php(147): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#9 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#15 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/books_task/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:28:13 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbModal" is invalid. Make sure it points to an existing directory or file. in /var/www/html/task_books_yii1/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/html/task_books_yii1/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'bootstrap.widge...', Array)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/html/books_task/protected/views/books/index.php(147): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#9 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#15 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/books_task/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:28:26 [error] [php] include(Modal.php): failed to open stream: No such file or directory (/var/www/html/task_books_yii1/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWidgetFactory.php(146): import()
+#1 /var/www/html/task_books_yii1/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(189): BooksController->createWidget()
+#3 /var/www/html/books_task/protected/views/books/index.php(147): BooksController->beginWidget()
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require()
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): BooksController->renderInternal()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#8 /var/www/html/books_task/protected/controllers/BooksController.php(18): BooksController->render()
+#9 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/views/books/index.php (147)
+in /var/www/html/books_task/protected/controllers/BooksController.php (18)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:28:47 [error] [php] Illegal offset type in isset or empty (/var/www/html/task_books_yii1/framework/YiiBase.php:265)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CBaseController.php(189): BooksController->createWidget()
+#1 /var/www/html/books_task/protected/views/books/index.php(147): BooksController->beginWidget()
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require()
+#3 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): BooksController->renderInternal()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#6 /var/www/html/books_task/protected/controllers/BooksController.php(18): BooksController->render()
+#7 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#8 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#11 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#12 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/views/books/index.php (147)
+in /var/www/html/books_task/protected/controllers/BooksController.php (18)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 20:29:43 [error] [exception.ParseError] ParseError: syntax error, unexpected '' +xhr.statusText, xhr.respons' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/books_task/protected/views/books/index.php:173
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#3 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#4 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#9 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#10 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/books_task/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:29:43 [error] [exception.ParseError] ParseError: syntax error, unexpected '' +xhr.statusText, xhr.respons' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/books_task/protected/views/books/index.php:173
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#3 /var/www/html/books_task/protected/controllers/BooksController.php(18): CController->render('index', Array)
+#4 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#9 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#10 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/books_task/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 20:44:04 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "большое_изображение". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('\xD0\xB1\xD0\xBE\xD0\xBB\xD1\x8C\xD1\x88\xD0\xBE\xD0\xB5_...')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('\xD0\xB1\xD0\xBE\xD0\xBB\xD1\x8C\xD1\x88\xD0\xBE\xD0\xB5_...')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/\xD0\xB1\xD0\xBE\xD0\xBB\xD1\x8C\xD1...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B5_%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:44:04 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "маленькое_изображение". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('\xD0\xBC\xD0\xB0\xD0\xBB\xD0\xB5\xD0\xBD\xD1\x8C\xD0\xBA\xD0...')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('\xD0\xBC\xD0\xB0\xD0\xBB\xD0\xB5\xD0\xBD\xD1\x8C\xD0\xBA\xD0...')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/\xD0\xBC\xD0\xB0\xD0\xBB\xD0\xB5\xD0...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%BE%D0%B5_%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:44:04 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "большое_изображение". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('\xD0\xB1\xD0\xBE\xD0\xBB\xD1\x8C\xD1\x88\xD0\xBE\xD0\xB5_...')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('\xD0\xB1\xD0\xBE\xD0\xBB\xD1\x8C\xD1\x88\xD0\xBE\xD0\xB5_...')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/\xD0\xB1\xD0\xBE\xD0\xBB\xD1\x8C\xD1...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B5_%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:44:04 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "маленькое_изображение". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('\xD0\xBC\xD0\xB0\xD0\xBB\xD0\xB5\xD0\xBD\xD1\x8C\xD0\xBA\xD0...')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('\xD0\xBC\xD0\xB0\xD0\xBB\xD0\xB5\xD0\xBD\xD1\x8C\xD0\xBA\xD0...')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/\xD0\xBC\xD0\xB0\xD0\xBB\xD0\xB5\xD0...')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%BE%D0%B5_%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 20:58:50 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:01:47 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:22:03 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:23:31 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:24:02 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:24:02 [error] [php] unlink(/var/www/html/books_task/protected/uploads/14unknown_world.jpg): No such file or directory (/var/www/html/books_task/protected/controllers/BooksController.php:43)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:25:48 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:25:55 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:25:55 [error] [php] unlink(/var/www/html/books_task/protected/uploads/14): No such file or directory (/var/www/html/books_task/protected/controllers/BooksController.php:43)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:26:25 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:26:25 [error] [php] unlink(/var/www/html/books_task/protected/uploads/14): No such file or directory (/var/www/html/books_task/protected/controllers/BooksController.php:43)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:27:15 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:27:15 [error] [php] unlink(/var/www/html/books_task/protected/uploads/14): No such file or directory (/var/www/html/books_task/protected/controllers/BooksController.php:43)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:28:31 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:28:31 [error] [php] unlink(): No such file or directory (/var/www/html/books_task/protected/controllers/BooksController.php:43)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:28:47 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:28:59 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:29:09 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:29:32 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:29:53 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:30:08 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:30:56 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:30:56 [error] [php] unlink(/var/www/html/books_task/protected/uploads/14www_artru_info.jpg): No such file or directory (/var/www/html/books_task/protected/controllers/BooksController.php:45)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (45)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:31:09 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:32:37 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:32:46 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:33:14 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:33:14 [error] [php] unlink(/var/www/html/books_task/protected/uploads/14www_artru_info.jpg): No such file or directory (/var/www/html/books_task/protected/controllers/BooksController.php:43)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/edit/14
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:33:28 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:33:32 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:33:53 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:35:17 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:35:24 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:35:31 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:35:53 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:35:58 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (39)
+in /var/www/html/books_task/index.php (13)

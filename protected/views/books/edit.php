@@ -36,6 +36,7 @@ if (isset($model->id)):
     <?php $form = $this->beginWidget('CActiveForm', array(
         'id' => 'book-add-form',
         'enableAjaxValidation' => false,
+        'htmlOptions' => array('enctype' => 'multipart/form-data'),
     )); ?>
 
     <p class="note">Поля, помеченные звездочкой (<span class="required">*</span>), обязательные к заполнению.</p>
@@ -68,11 +69,12 @@ if (isset($model->id)):
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'preview'); ?>
-        <?php echo $form->fileField($model, 'preview'); ?>
-        <?php echo $form->error($model, 'preview'); ?>
+        <?php echo $form->labelEx($model, 'image'); ?>
+        <?php echo $form->fileField($model, 'image'); ?>
+        <?php echo $form->error($model, 'image'); ?>
     </div>
 
+    <hr>
 
     <div class="row buttons">
         <?php echo CHtml::submitButton('Отправить'); ?>
