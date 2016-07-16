@@ -7,7 +7,12 @@
 $this->breadcrumbs = array(
     'Книги',
 );
-?>
+if (Yii::app()->user->hasFlash('guest')): ?>
+    <div class="flash-notice">
+        <?php echo Yii::app()->user->getFlash('guest'); ?>
+    </div>
+<?php endif; ?>
+
 <h1>Книги</h1>
 
 <div class="form">
@@ -149,11 +154,13 @@ $this->breadcrumbs = array(
                                     ),
                                 )); ?>
                                 <td><br>
-                                    <?php echo CHtml::link('[ред]', '#',
-                                        array(
-                                            'submit' => array(
-                                                'edit', 'id' => $book->id
-                                            ))); ?>
+                                    <?php if (!Yii::app()->user->isGuest) {
+                                        echo CHtml::link('[ред]', '#',
+                                            array(
+                                                'submit' => array(
+                                                    'edit', 'id' => $book->id
+                                                )));
+                                    } ?>
                                 </td>
                                 <td><br>
                                     <?php echo CHtml::link('[просм]', '#',
@@ -164,10 +171,12 @@ $this->breadcrumbs = array(
                                         )); ?>
                                 </td>
                                 <td><br>
-                                    <?php echo CHtml::link('[удал]', '#',
-                                        array('submit' => array('delete', 'id' => $book->id),
-                                            'confirm' => 'Вы уверены, что хотите удалить книгу "' .
-                                                $book->name . '"?')); ?>
+                                    <?php if (!Yii::app()->user->isGuest) {
+                                        echo CHtml::link('[удал]', '#',
+                                            array('submit' => array('delete', 'id' => $book->id),
+                                                'confirm' => 'Вы уверены, что хотите удалить книгу "' .
+                                                    $book->name . '"?'));
+                                    } ?>
                                 </td>
                                 <?php $this->endWidget(); ?>
                             </div>

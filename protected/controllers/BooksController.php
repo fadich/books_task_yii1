@@ -21,6 +21,10 @@ class BooksController extends Controller
 
     public function actionEdit()
     {
+        if (Yii::app()->user->isGuest){
+            Yii::app()->user->setFlash('guest', 'Только авторизированные пользователи могут управлять записями.');
+            $this->redirect('/books_task/index.php/books/index');
+        }
         /**
          * Найти существующую не удаленную книгу или создать новую
          */
@@ -65,6 +69,11 @@ class BooksController extends Controller
 
     public function actionDelete()
     {
+        if (Yii::app()->user->isGuest){
+            Yii::app()->user->setFlash('guest', 'Только авторизированные пользователи могут управлять записями.');
+            $this->redirect('/books_task/index.php/books/index');
+        }
+
         if (isset($_GET['id'])){
             $model = Book::model()->findByPk($_GET['id']);
             if(isset($model->id)){

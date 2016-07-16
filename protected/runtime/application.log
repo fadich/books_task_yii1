@@ -3565,3 +3565,12 @@ in /var/www/html/books_task/index.php (13)
 2016/07/16 21:35:58 [warning] [application] Failed to set unsafe attribute "image" of "Book".
 in /var/www/html/books_task/protected/controllers/BooksController.php (39)
 in /var/www/html/books_task/index.php (13)
+2016/07/16 21:38:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "index". in /var/www/html/task_books_yii1/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#1 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/html/books_task/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/books_task/index.php/index
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
