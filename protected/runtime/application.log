@@ -3574,3 +3574,120 @@ Stack trace:
 REQUEST_URI=/books_task/index.php/index
 HTTP_REFERER=http://localhost/books_task/index.php/books/index
 ---
+2016/07/16 21:54:18 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:54:18 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/view')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/15
+HTTP_REFERER=http://192.168.0.102/books_task/index.php/books/edit
+---
+2016/07/16 21:54:44 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:54:44 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/view')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/16
+HTTP_REFERER=http://192.168.0.102/books_task/index.php/books/edit
+---
+2016/07/16 21:56:12 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:56:12 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/view')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/17
+HTTP_REFERER=http://192.168.0.102/books_task/index.php/books/edit
+---
+2016/07/16 21:56:25 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:56:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/view')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/18
+HTTP_REFERER=http://192.168.0.102/books_task/index.php/books/edit
+---
+2016/07/16 21:57:05 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:57:26 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:57:30 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:57:49 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:57:49 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/view')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/19
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 21:58:39 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:59:04 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:59:31 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:59:51 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:59:56 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 21:59:56 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/view')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/22
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit
+---
+2016/07/16 22:00:31 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 22:00:35 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 22:00:36 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 22:00:42 [warning] [application] Failed to set unsafe attribute "image" of "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (43)
+in /var/www/html/books_task/index.php (13)

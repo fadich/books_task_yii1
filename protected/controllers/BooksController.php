@@ -56,7 +56,7 @@ class BooksController extends Controller
 //                    $model->image->saveAs($path);
 //                }
                 Yii::app()->user->setFlash('bookSuccess', 'Данные о книге "' . $model->name . '" успешно сохранены.');
-                $this->redirect($model->id);
+                $this->redirect('/books_task/index.php/books/edit/' . $model->id);
             } else {
                 Yii::app()->user->setFlash('bookError', 'Ошибка записи.');
             }
@@ -73,7 +73,6 @@ class BooksController extends Controller
             Yii::app()->user->setFlash('guest', 'Только авторизированные пользователи могут управлять записями.');
             $this->redirect('/books_task/index.php/books/index');
         }
-
         if (isset($_GET['id'])){
             $model = Book::model()->findByPk($_GET['id']);
             if(isset($model->id)){
