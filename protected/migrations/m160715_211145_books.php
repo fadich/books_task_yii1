@@ -12,6 +12,7 @@ class m160715_211145_books extends CDbMigration
 			'preview' => 'string',
 			'date' => 'integer not null',
 			'author_id' => 'integer not null',
+			'status' => 'integer not null',
 		]);
 	}
 
