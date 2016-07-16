@@ -71,12 +71,12 @@ if (Yii::app()->user->hasFlash('guest')): ?>
     </div>
     <?php $this->endWidget(); ?>
 
-    <?php if ($model->filterDateTo < 1){
+    <?php if ($model->filterDateTo < 1) {
         $model->filterDateTo = time() + time();
     }
-    $books = Book::model()->findAllBySql("select * from book where status = 10 and name like '%" .
-        $model->filterName . "%' and author_id like '%". $model->filterAuthor . "%' and date between '" .
-        $model->filterDateSince . "' and '" . $model->filterDateTo . "'" .
+    $books = Book::model()->findAllBySql("select * from book where status = " . Book::STATUS_ACTIVE .
+        " and name like '%" . $model->filterName . "%' and author_id like '%" . $model->filterAuthor .
+        "%' and date between '" . $model->filterDateSince . "' and '" . $model->filterDateTo . "'" .
         "order by name");
     $i = 0; ?>
     <table border="1" rules="all" style="border: #0f0f0f">
@@ -146,8 +146,30 @@ if (Yii::app()->user->hasFlash('guest')): ?>
                     endif;
                     ?></td>
                 <td><?php echo $book->getAuthor()->firstname . ' ' . $book->getAuthor()->lastname ?></td>
-                <td><?php echo date('d F Y', $book->date) ?></td>
-                <td><?php echo date('d F Y', $book->date_create) ?></td>
+                <td><?php if (date('dmy') === date('dmy', $book->date)) {
+                        echo 'Сегодня';
+                    } elseif ((-1 * ($book->date + time() - time() - strtotime(date('d-m-Y', time())))
+                            <= 3600 * 24) && (-1 * ($book->date + time() - time() - strtotime(date('d-m-Y', time())))
+                            > 0)
+                    ) {
+                        echo 'Вчера';
+                    } elseif (($book->date + time() - time() - strtotime(date('d-m-Y', time()))
+                            <= 3600 * 24) && (-1 * ($book->date + time() - time() - strtotime(date('d-m-Y', time())))
+                            < 0)
+                    ) {
+                        echo 'Завтра';
+                    } else {
+                        echo date('d F Y', $book->date);
+                    } ?></td>
+                <td><?php if (date('dmy') === date('dmy', $book->date_create)) {
+                        echo 'Сегодня';
+                    } elseif (-1 * ($book->date_create + time() - time() - strtotime(date('d-m-Y', time())))
+                        <= 3600 * 24
+                    ) {
+                        echo 'Вчера';
+                    } else {
+                        echo date('d F Y', $book->date_create);
+                    } ?></td>
                 <td>
                     <table>
                         <tr>
