@@ -17,7 +17,7 @@ if (Yii::app()->user->hasFlash('bookSuccess')): ?>
 
 if (isset($model->id)):
     $this->breadcrumbs = array(
-        'Книги' => 'index',
+        'Книги' => '/books_task/index.php/books/index',
         'Редактирование',
     ); ?>
     <h1>Редактировать</h1>

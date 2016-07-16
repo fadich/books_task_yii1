@@ -126,4 +126,13 @@ class Book extends CActiveRecord
 		$author = Author::model()->findByPk($this->author_id);
 		return $author;
 	}
+
+	/**
+	 * @return bool
+	 */
+	public function deleteBook()
+	{
+		$this->status = self::STATUS_NOT_ACTIVE;
+		return $this->save() ? true : false;
+	}
 }

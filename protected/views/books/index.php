@@ -83,14 +83,40 @@ $this->breadcrumbs = array(
                 <td><?php echo $book->name ?></td>
                 <td><?php echo $book->preview ?></td>
                 <td><?php echo $book->getAuthor()->firstname . ' ' . $book->getAuthor()->lastname ?></td>
-                <td><?php echo date('d/m/Y', $book->date) ?></td>
-                <td><?php echo date('d/m/Y', $book->date_create) ?></td>
+                <td><?php echo date('d F Y', $book->date) ?></td>
+                <td><?php echo date('d F Y', $book->date_create) ?></td>
                 <td>
                     <table>
                         <tr>
-                            <td><?php echo CHtml::link('[ред]', 'edit?id=' . $book->id) ?></td>
-                            <td><?php echo CHtml::link('[просм]', 'edit?id=' . $book->id) ?></td>
-                            <td><?php echo CHtml::link('[удал]', 'edit?id=' . $book->id) ?></td>
+                            <div class="form">
+                                <?php $form = $this->beginWidget('CActiveForm', array(
+                                    'id' => 'add-book-form',
+                                    'enableClientValidation' => true,
+                                    'clientOptions' => array(
+                                        'validateOnSubmit' => true,
+                                    ),
+                                )); ?>
+                                <td><br>
+                                    <?php echo CHtml::link('[ред]', '#',
+                                        array(
+                                            'submit' => array(
+                                                'edit', 'id' => $book->id
+                                            ))); ?>
+                                </td>
+                                <td><br>
+                                    <?php echo CHtml::link('[просм]', '#',
+                                        array(
+//                                            'submit' => array(
+//                                                'edit', 'id' => $book->id
+//                                            )
+                                        )); ?>
+                                </td>
+                                <td><br>
+                                    <?php echo CHtml::link('[удал]', '#',
+                                        array('submit' => array('delete', 'id' => $book->id), 'confirm' => 'Are you sure?')); ?>
+                                </td>
+                                <?php $this->endWidget(); ?>
+                            </div>
                         </tr>
                     </table>
                 </td>

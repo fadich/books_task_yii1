@@ -1274,3 +1274,152 @@ REQUEST_URI=/books_task/index.php/books/index
 in /var/www/html/books_task/protected/views/books/index.php (85)
 in /var/www/html/books_task/protected/controllers/BooksController.php (14)
 in /var/www/html/books_task/index.php (13)
+2016/07/16 17:45:41 [error] [exception.Error] Error: Call to a member function getErrors() on boolean in /var/www/html/task_books_yii1/framework/web/helpers/CHtml.php:1765
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/widgets/CActiveForm.php(516): CHtml::errorSummary(Array, NULL, NULL, Array)
+#1 /var/www/html/books_task/protected/views/books/edit.php(43): CActiveForm->errorSummary(true)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#3 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('edit', Array, true)
+#6 /var/www/html/books_task/protected/controllers/BooksController.php(42): CController->render('edit', Array)
+#7 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#8 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#12 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#13 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/html/books_task/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=9
+---
+2016/07/16 17:45:59 [error] [exception.Error] Error: Call to a member function getErrors() on boolean in /var/www/html/task_books_yii1/framework/web/helpers/CHtml.php:1765
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/widgets/CActiveForm.php(516): CHtml::errorSummary(Array, NULL, NULL, Array)
+#1 /var/www/html/books_task/protected/views/books/edit.php(43): CActiveForm->errorSummary(true)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#3 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('edit', Array, true)
+#6 /var/www/html/books_task/protected/controllers/BooksController.php(42): CController->render('edit', Array)
+#7 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#8 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#12 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#13 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/html/books_task/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=9*
+---
+2016/07/16 17:46:01 [error] [exception.Error] Error: Call to a member function getErrors() on boolean in /var/www/html/task_books_yii1/framework/web/helpers/CHtml.php:1765
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/widgets/CActiveForm.php(516): CHtml::errorSummary(Array, NULL, NULL, Array)
+#1 /var/www/html/books_task/protected/views/books/edit.php(43): CActiveForm->errorSummary(true)
+#2 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#3 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('edit', Array, true)
+#6 /var/www/html/books_task/protected/controllers/BooksController.php(42): CController->render('edit', Array)
+#7 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionEdit()
+#8 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edit')
+#12 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edit')
+#13 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/html/books_task/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/books_task/index.php/books/edit?id=9
+---
+2016/07/16 17:50:54 [error] [exception.ParseError] ParseError: syntax error, unexpected ')' in /var/www/html/books_task/protected/controllers/BooksController.php:14
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(276): CWebApplication->createController('index/')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#2 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#3 /var/www/html/books_task/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/16 17:53:28 [error] [php] Undefined variable: data (/var/www/html/books_task/protected/views/books/index.php:112)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#2 /var/www/html/books_task/protected/controllers/BooksController.php(18): BooksController->render()
+#3 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/views/books/index.php (112)
+in /var/www/html/books_task/protected/controllers/BooksController.php (18)
+in /var/www/html/books_task/index.php (13)
+2016/07/16 17:53:48 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "delete". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('delete')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('delete')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/delete')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/delete/9
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 17:55:21 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "delete". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('delete')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('delete')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/delete')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/delete/9
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 17:56:20 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "edhit". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('edhit')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edhit')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edhit')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/edhit/9
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/16 17:56:31 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "edhit". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('edhit')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('edhit')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/edhit')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/edhit/9
+---
+2016/07/16 17:57:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "book/index". in /var/www/html/task_books_yii1/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('book/index')
+#1 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/html/books_task/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/books_task/index.php/book/index
+HTTP_REFERER=http://localhost/books_task/index.php/books/edit/9
+---
+2016/07/16 17:59:16 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "delete". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('delete')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('delete')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/delete')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/delete/9
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
