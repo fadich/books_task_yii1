@@ -19,6 +19,12 @@ class Book extends CActiveRecord
     const STATUS_ACTIVE = 10;
 
     public $image;
+    public $filterName;
+    public $filterAuthor;
+    public $filterDateSince;
+    public $filterDateTo;
+    public $filterDateSinceSub;
+    public $filterDateToSub;
 
     /**
      * Returns the static model of the specified AR class.
@@ -47,8 +53,10 @@ class Book extends CActiveRecord
         // will receive user inputs.
         return array(
             array('name, date, author_id', 'required'),
-            array('status, date_create, date_update, author_id', 'numerical', 'integerOnly' => true),
-            array('name, date, preview', 'length', 'max' => 255, 'min' => 6),
+            array('status, date_create, date_update, author_id, filterAuthor, filterDateSince, filterDateTo,
+            filterDateSinceSub, filterDateToSub',
+                'numerical', 'integerOnly' => true),
+            array('name, date, preview, filterName', 'length', 'max' => 255, 'min' => 6),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
             array('id, name, date_create, date_update, preview, date, author_id', 'safe', 'on' => 'search'),

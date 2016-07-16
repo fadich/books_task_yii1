@@ -14,6 +14,16 @@ class BooksController extends Controller
             $this->redirect('edit?id=' . $_POST['edit']);
         }
 
+        if (isset($_POST['Book'])) {
+            $model->filterName = $_POST['Book']['filterName'];
+            $model->filterAuthor = $_POST['Book']['filterAuthor'];
+            $model->filterDateSinceSub = $_POST['Book']['filterDateSinceSub'];
+            $model->filterDateSince = strtotime(str_replace('/', '-', $_POST['Book']['filterDateSinceSub']));
+            if (isset($_POST['Book']['filterDateToSub'])) {
+                $model->filterDateToSub = $_POST['Book']['filterDateToSub'];
+                $model->filterDateTo = strtotime(str_replace('/', '-', $_POST['Book']['filterDateToSub']));
+            }
+        }
         $this->render('index', array(
             'model' => $model,
         ));
@@ -21,7 +31,7 @@ class BooksController extends Controller
 
     public function actionEdit()
     {
-        if (Yii::app()->user->isGuest){
+        if (Yii::app()->user->isGuest) {
             Yii::app()->user->setFlash('guest', 'Только авторизированные пользователи могут управлять записями.');
             $this->redirect('/books_task/index.php/books/index');
         }
@@ -41,20 +51,18 @@ class BooksController extends Controller
 
         if (isset($_POST['Book'])) {
             $model->attributes = $_POST['Book'];
-            $model->image = CUploadedFile::getInstance($model,'image');
-            $path = Yii::getPathOfAlias('webroot').'/protected/uploads/'.$model->id . $model->image;
-            if($model->image != null) {
-                if($model->image->saveAs($path)){
-                    if($model->preview != false && $model->image != false){
-                        unlink($model->preview);
-                    }
+            $model->image = CUploadedFile::getInstance($model, 'image');
+            $path = Yii::getPathOfAlias('webroot') . '/protected/uploads/' . $model->id . $model->image;
+            $oldPreview = $model->preview;
+            if ($model->image != null) {
+                if ($model->image->saveAs($path)) {
                     $model->preview = $path;
                 }
             }
             if ($model->validate() && $model->updateBook($model)) {
-//                if($model->image != null) {
-//                    $model->image->saveAs($path);
-//                }
+                if ($oldPreview != false && $model->image != false) {
+                    unlink($oldPreview);
+                }
                 Yii::app()->user->setFlash('bookSuccess', 'Данные о книге "' . $model->name . '" успешно сохранены.');
                 $this->redirect('/books_task/index.php/books/edit/' . $model->id);
             } else {
@@ -69,13 +77,13 @@ class BooksController extends Controller
 
     public function actionDelete()
     {
-        if (Yii::app()->user->isGuest){
+        if (Yii::app()->user->isGuest) {
             Yii::app()->user->setFlash('guest', 'Только авторизированные пользователи могут управлять записями.');
             $this->redirect('/books_task/index.php/books/index');
         }
-        if (isset($_GET['id'])){
+        if (isset($_GET['id'])) {
             $model = Book::model()->findByPk($_GET['id']);
-            if(isset($model->id)){
+            if (isset($model->id)) {
                 $model->deleteBook();
             }
         }
