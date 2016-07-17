@@ -3,6 +3,8 @@
 /* @var $model Book */
 /* @var $form CActiveForm */
 
+$this->pageTitle='Книги';
+
 if (Yii::app()->user->hasFlash('bookError')): ?>
     <div class="flash-error">
         <?php echo Yii::app()->user->getFlash('bookError'); ?>
@@ -18,7 +20,7 @@ if (Yii::app()->user->hasFlash('bookSuccess')): ?>
 if (isset($model->id)):
     $this->breadcrumbs = array(
         'Книги' => '/books_task/index.php/books/index',
-        'Редактирование',
+        'Редактирование "' . $model->name . '"',
     ); ?>
     <h1>Редактировать</h1>
     <p>Пожалуйста, введите новую информацию информацию книге <?php echo $model->name ?>:</p>

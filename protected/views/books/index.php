@@ -4,6 +4,7 @@
 /* @var $model Book */
 /* @var $form CActiveForm */
 
+$this->pageTitle = 'Книги';
 $this->breadcrumbs = array(
     'Книги',
 );
@@ -95,37 +96,6 @@ if (Yii::app()->user->hasFlash('guest')): ?>
                 <td><?php echo ++$i; ?></td>    <!-- Порядковый номер -->
                 <td><?php echo $book->name ?></td>
                 <td><?php if ($book->preview != false): ?>
-                        <style>
-                            .blokimg {
-                                position: relative;
-                            }
-
-                            .overlay {
-                                display: none;
-                                height: auto;
-                                left: -100%;
-                                position: absolute;
-                                top: -250%;
-                                width: auto;
-                                z-index: 999;
-                            }
-
-                            .overlay .overlay_container {
-                                display: table-cell;
-                                vertical-align: middle;
-                            }
-
-                            .overlay_container img {
-                                background-color: #FFFFFF;
-                                padding: 10px;
-                                -webkit-border-radius: 5px;
-                                -moz-border-radius: 5px;
-                            }
-
-                            .overlay:target {
-                                display: table;
-                            }
-                        </style>
                         <div class="blokimg">
                             <div class="overlay" id="contenedor<?= $i ?>">
                                 <div class="overlay_container">
@@ -191,12 +161,64 @@ if (Yii::app()->user->hasFlash('guest')): ?>
                                     } ?>
                                 </td>
                                 <td><br>
-                                    <?php echo CHtml::link('[просм]', '#',
-                                        array(
-//                                            'submit' => array(
-//                                                'edit', 'id' => $book->id
-//                                            )
-                                        )); ?>
+                                    <div id="myModal<?= $book->id ?>" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close"></span>
+                                            <p>
+                                            <table>
+                                                <tr>
+                                                    <td width="70px">
+                                                        <?php echo '<img src="' .
+                                                            substr($book->preview, 13) . '" width="270px"/>' ?>
+                                                    </td>
+                                                    <td style="font-size: 18px;">
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <?= 'Название книги: <strong>' . $book->name . '</strong>'?><br><br>
+                                                                    <?= 'Автор: <strong>' . $book->getAuthor()->firstname ?>
+                                                                    <?= $book->getAuthor()->lastname . '</strong>' ?><br><br>
+                                                                    <?= 'Дата выхода: <strong>' . date('d F Y', $book->date) . '</strong>' ?>
+                                                                    <br><br>
+                                                                    <?= 'Дата добавления: <strong>' . date('d F Y', $book->date_create) . '</strong>' ?>
+                                                                    <br><br>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="150px"></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <a id="myBtn<?= $book->id ?>">[просм]</a>
+
+                                    <script>
+                                        var modal = document.getElementById("myModal<?= $book->id ?>");
+
+                                        var btn = document.getElementById("myBtn<?= $book->id ?>");
+
+                                        var span = document.getElementsByClassName("close")[0];
+
+                                        btn.onclick = function () {
+                                            modal.style.display = "block";
+                                        }
+
+                                        span.onclick = function () {
+                                            modal.style.display = "none";
+                                        }
+
+                                        window.onclick = function (event) {
+                                            if (event.target == modal) {
+                                                modal.style.display = "none";
+                                            }
+                                        }
+                                    </script>
+
                                 </td>
                                 <td><br>
                                     <?php if (!Yii::app()->user->isGuest) {
@@ -215,3 +237,72 @@ if (Yii::app()->user->hasFlash('guest')): ?>
         <?php endforeach; ?>
     </table>
 </div>
+
+<style>
+    /* Увеличение изображения */
+    .blokimg {
+        position: relative;
+    }
+
+    .overlay {
+        display: none;
+        height: auto;
+        left: -100%;
+        position: absolute;
+        top: -250%;
+        width: auto;
+        z-index: 999;
+    }
+
+    .overlay .overlay_container {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .overlay_container img {
+        background-color: #FFFFFF;
+        padding: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+    }
+
+    .overlay:target {
+        display: table;
+    }
+
+    /* Модальное окно */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: -120px;
+        width: 100%;
+        height: 135%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 55%;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>

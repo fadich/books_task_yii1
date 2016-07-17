@@ -2,14 +2,18 @@
 /* @var $this SiteController */
 /* @var $error array */
 
-$this->pageTitle=Yii::app()->name . ' - Error';
-$this->breadcrumbs=array(
-	'Error',
+$this->pageTitle ='Ошибка';
+$this->breadcrumbs = array(
+    'Ошибка',
 );
 ?>
+<div>
+    <h1>Ошибка <?php echo $code; ?></h1>
 
-<h2>Error <?php echo $code; ?></h2>
-
-<div class="error">
-<?php echo CHtml::encode($message); ?>
+    <div class="error" style="font-size: 16px">
+        <?php
+        //echo CHtml::encode($message);
+        ?>
+        Страница по запросу <strong><?= $_SERVER['PHP_SELF'] ?></strong> не найдена...
+    </div>
 </div>
