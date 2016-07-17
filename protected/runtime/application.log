@@ -7050,3 +7050,445 @@ Stack trace:
 #16 {main}
 REQUEST_URI=/books_task/index.php/books/index/2
 ---
+2016/07/17 10:15:59 [warning] [application] Не удалось присвоить небезопасный атрибут "image" класса "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (53)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 10:18:39 [error] [exception.CException] CException: Не определено свойство "CDbCommand.status". in /var/www/html/task_books_yii1/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/db/CDbCommand.php(106): CComponent->__set('status', 10)
+#1 /var/www/html/task_books_yii1/framework/db/CDbConnection.php(470): CDbCommand->__construct(Object(CDbConnection), Array)
+#2 /var/www/html/task_books_yii1/framework/db/schema/CDbCommandBuilder.php(351): CDbConnection->createCommand(Array)
+#3 /var/www/html/task_books_yii1/framework/db/ar/CActiveRecord.php(1526): CDbCommandBuilder->createSqlCommand(Array, Array)
+#4 /var/www/html/books_task/protected/views/books/index.php(266): CActiveRecord->findAllBySql(Array)
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#6 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#8 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /var/www/html/books_task/protected/controllers/BooksController.php(28): CController->render('index', Array)
+#10 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#16 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/html/books_task/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/books_task/index.php/books/index
+HTTP_REFERER=http://localhost/books_task/
+---
+2016/07/17 10:19:30 [error] [exception.CException] CException: Не определено свойство "CDbCommand.status". in /var/www/html/task_books_yii1/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/db/CDbCommand.php(106): CComponent->__set('status', 10)
+#1 /var/www/html/task_books_yii1/framework/db/CDbConnection.php(470): CDbCommand->__construct(Object(CDbConnection), Array)
+#2 /var/www/html/task_books_yii1/framework/db/schema/CDbCommandBuilder.php(351): CDbConnection->createCommand(Array)
+#3 /var/www/html/task_books_yii1/framework/db/ar/CActiveRecord.php(1526): CDbCommandBuilder->createSqlCommand(Array, Array)
+#4 /var/www/html/books_task/protected/views/books/index.php(267): CActiveRecord->findAllBySql(Array)
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#6 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#8 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /var/www/html/books_task/protected/controllers/BooksController.php(28): CController->render('index', Array)
+#10 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#16 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/html/books_task/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/17 10:19:32 [error] [exception.CException] CException: Не определено свойство "CDbCommand.status". in /var/www/html/task_books_yii1/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/db/CDbCommand.php(106): CComponent->__set('status', 10)
+#1 /var/www/html/task_books_yii1/framework/db/CDbConnection.php(470): CDbCommand->__construct(Object(CDbConnection), Array)
+#2 /var/www/html/task_books_yii1/framework/db/schema/CDbCommandBuilder.php(351): CDbConnection->createCommand(Array)
+#3 /var/www/html/task_books_yii1/framework/db/ar/CActiveRecord.php(1526): CDbCommandBuilder->createSqlCommand(Array, Array)
+#4 /var/www/html/books_task/protected/views/books/index.php(267): CActiveRecord->findAllBySql(Array)
+#5 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#6 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#8 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /var/www/html/books_task/protected/controllers/BooksController.php(28): CController->render('index', Array)
+#10 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#16 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/html/books_task/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/17 10:25:37 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "page". in /var/www/html/task_books_yii1/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(270): CController->missingAction('page')
+#1 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/page')
+#3 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/books_task/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/books_task/index.php/books/page?page=3
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/17 10:27:25 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ',' or ')' in /var/www/html/books_task/protected/views/books/index.php:276
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#3 /var/www/html/books_task/protected/controllers/BooksController.php(28): CController->render('index', Array)
+#4 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#9 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#10 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/books_task/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/books_task/index.php/books/index
+HTTP_REFERER=http://localhost/books_task/index.php/books/index/1
+---
+2016/07/17 10:31:45 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5, 5' at line 1. Выполнявшийся SQL-запрос: select * from book where status = 10 and name like '%%' and author_id like '%%' and date between '' and ''order by name limit -5, 5.
+in /var/www/html/books_task/protected/views/books/index.php (88)
+in /var/www/html/books_task/protected/controllers/BooksController.php (36)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 10:31:45 [error] [exception.CDbException] CDbException: CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5, 5' at line 1. The SQL statement executed was: select * from book where status = 10 and name like '%%' and author_id like '%%' and date between '' and ''order by name limit -5, 5 in /var/www/html/task_books_yii1/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/task_books_yii1/framework/db/ar/CActiveRecord.php(1527): CDbCommand->queryAll()
+#2 /var/www/html/books_task/protected/views/books/index.php(88): CActiveRecord->findAllBySql('select * from b...')
+#3 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /var/www/html/books_task/protected/controllers/BooksController.php(36): CController->render('index', Array)
+#8 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#9 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#14 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/html/books_task/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/17 10:45:09 [error] [php] Undefined index: Book (/var/www/html/books_task/protected/controllers/BooksController.php:35)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/controllers/BooksController.php (35)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 10:52:42 [error] [php] Illegal string offset 'filterName' (/var/www/html/books_task/protected/controllers/BooksController.php:18)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/controllers/BooksController.php (18)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 10:57:15 [error] [exception.CException] CException: Не определено свойство "Book.order". in /var/www/html/task_books_yii1/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/db/ar/CActiveRecord.php(159): CComponent->__set('order', 1)
+#1 /var/www/html/books_task/protected/controllers/BooksController.php(31): CActiveRecord->__set('order', 1)
+#2 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#3 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#8 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/html/books_task/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/17 11:01:25 [error] [php] Undefined index: filterName (/var/www/html/books_task/protected/controllers/BooksController.php:18)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/controllers/BooksController.php (18)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:01:34 [error] [php] Undefined index: filterName (/var/www/html/books_task/protected/controllers/BooksController.php:18)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/controllers/BooksController.php (18)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:02:58 [error] [php] Undefined variable: size (/var/www/html/books_task/protected/views/books/index.php:73)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#2 /var/www/html/books_task/protected/controllers/BooksController.php(35): BooksController->render()
+#3 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/views/books/index.php (73)
+in /var/www/html/books_task/protected/controllers/BooksController.php (35)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:02:59 [error] [php] Undefined variable: size (/var/www/html/books_task/protected/views/books/index.php:73)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#2 /var/www/html/books_task/protected/controllers/BooksController.php(35): BooksController->render()
+#3 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/views/books/index.php (73)
+in /var/www/html/books_task/protected/controllers/BooksController.php (35)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:05:54 [error] [php] Undefined index: filterName (/var/www/html/books_task/protected/controllers/BooksController.php:18)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/controllers/BooksController.php (18)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:06:24 [error] [php] Undefined index: filterName (/var/www/html/books_task/protected/controllers/BooksController.php:18)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#2 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/controllers/BooksController.php (18)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:08:28 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5, 5' at line 1. Выполнявшийся SQL-запрос: select * from book where status = 10 and name like '%%' and author_id like '%%' and date between '' and '2937485816'order by name limit -5, 5.
+in /var/www/html/books_task/protected/views/books/index.php (83)
+in /var/www/html/books_task/protected/controllers/BooksController.php (27)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:08:28 [error] [exception.CDbException] CDbException: CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5, 5' at line 1. The SQL statement executed was: select * from book where status = 10 and name like '%%' and author_id like '%%' and date between '' and '2937485816'order by name limit -5, 5 in /var/www/html/task_books_yii1/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/task_books_yii1/framework/db/ar/CActiveRecord.php(1527): CDbCommand->queryAll()
+#2 /var/www/html/books_task/protected/views/books/index.php(83): CActiveRecord->findAllBySql('select * from b...')
+#3 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /var/www/html/books_task/protected/controllers/BooksController.php(27): CController->render('index', Array)
+#8 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#9 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#14 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/html/books_task/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/books_task/index.php/books/index
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/17 11:08:46 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5, 5' at line 1. Выполнявшийся SQL-запрос: select * from book where status = 10 and name like '%%' and author_id like '%%' and date between '' and '2937485852'order by name limit -5, 5.
+in /var/www/html/books_task/protected/views/books/index.php (83)
+in /var/www/html/books_task/protected/controllers/BooksController.php (27)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:08:46 [error] [exception.CDbException] CDbException: CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5, 5' at line 1. The SQL statement executed was: select * from book where status = 10 and name like '%%' and author_id like '%%' and date between '' and '2937485852'order by name limit -5, 5 in /var/www/html/task_books_yii1/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/task_books_yii1/framework/db/ar/CActiveRecord.php(1527): CDbCommand->queryAll()
+#2 /var/www/html/books_task/protected/views/books/index.php(83): CActiveRecord->findAllBySql('select * from b...')
+#3 /var/www/html/task_books_yii1/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#4 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /var/www/html/books_task/protected/controllers/BooksController.php(27): CController->render('index', Array)
+#8 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#9 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#14 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/html/books_task/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/books_task/index.php/books/index
+HTTP_REFERER=http://localhost/books_task/index.php/books/index
+---
+2016/07/17 11:23:41 [error] [exception.ParseError] ParseError: syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /var/www/html/books_task/protected/views/books/index.php:77
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#3 /var/www/html/books_task/protected/controllers/BooksController.php(35): CController->render('index', Array)
+#4 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/task_books_yii1/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): CController->run('index')
+#9 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController('books/index')
+#10 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/html/books_task/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/books_task/index.php/books/index
+---
+2016/07/17 11:31:28 [error] [php] Undefined index: filterName (/var/www/html/books_task/protected/views/books/index.php:82)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#2 /var/www/html/books_task/protected/controllers/BooksController.php(36): BooksController->render()
+#3 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/views/books/index.php (82)
+in /var/www/html/books_task/protected/controllers/BooksController.php (36)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:31:30 [error] [php] Undefined index: filterName (/var/www/html/books_task/protected/views/books/index.php:82)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#2 /var/www/html/books_task/protected/controllers/BooksController.php(36): BooksController->render()
+#3 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/views/books/index.php (82)
+in /var/www/html/books_task/protected/controllers/BooksController.php (36)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:32:26 [error] [php] Undefined index: filterName (/var/www/html/books_task/protected/views/books/index.php:86)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#2 /var/www/html/books_task/protected/controllers/BooksController.php(36): BooksController->render()
+#3 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/views/books/index.php (86)
+in /var/www/html/books_task/protected/controllers/BooksController.php (36)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:32:28 [error] [php] Undefined index: filterName (/var/www/html/books_task/protected/views/books/index.php:86)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#2 /var/www/html/books_task/protected/controllers/BooksController.php(36): BooksController->render()
+#3 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/views/books/index.php (86)
+in /var/www/html/books_task/protected/controllers/BooksController.php (36)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:32:28 [error] [php] Undefined index: filterName (/var/www/html/books_task/protected/views/books/index.php:86)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#2 /var/www/html/books_task/protected/controllers/BooksController.php(36): BooksController->render()
+#3 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/views/books/index.php (86)
+in /var/www/html/books_task/protected/controllers/BooksController.php (36)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:32:29 [error] [php] Undefined index: filterName (/var/www/html/books_task/protected/views/books/index.php:86)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#2 /var/www/html/books_task/protected/controllers/BooksController.php(36): BooksController->render()
+#3 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/views/books/index.php (86)
+in /var/www/html/books_task/protected/controllers/BooksController.php (36)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:32:29 [error] [php] Undefined index: filterName (/var/www/html/books_task/protected/views/books/index.php:86)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(869): BooksController->renderFile()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(782): BooksController->renderPartial()
+#2 /var/www/html/books_task/protected/controllers/BooksController.php(36): BooksController->render()
+#3 /var/www/html/task_books_yii1/framework/web/actions/CInlineAction.php(49): BooksController->actionIndex()
+#4 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#6 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#7 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#8 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index
+in /var/www/html/books_task/protected/views/books/index.php (86)
+in /var/www/html/books_task/protected/controllers/BooksController.php (36)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 11:41:53 [error] [php] date() expects parameter 2 to be integer, string given (/var/www/html/books_task/protected/controllers/BooksController.php:47)
+Stack trace:
+#0 /var/www/html/task_books_yii1/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/task_books_yii1/framework/web/CController.php(286): BooksController->runAction()
+#2 /var/www/html/task_books_yii1/framework/web/CController.php(265): BooksController->runActionWithFilters()
+#3 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(282): BooksController->run()
+#4 /var/www/html/task_books_yii1/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/task_books_yii1/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/html/books_task/index.php(13): CWebApplication->run()
+REQUEST_URI=/books_task/index.php/books/index?filterName=%D0%B5&filterAuthor=&filterDateSince=&filterDateTo=1355263200
+in /var/www/html/books_task/protected/controllers/BooksController.php (47)
+in /var/www/html/books_task/index.php (13)

@@ -14,16 +14,41 @@ class BooksController extends Controller
             $this->redirect('edit?id=' . $_POST['edit']);
         }
 
+        if (isset($_POST['page'])) {
+            $model->limit = $_POST['page'];
+        } else {
+            $model->limit = 1;
+        }
+
         if (isset($_POST['Book'])) {
-            $model->filterName = $_POST['Book']['filterName'];
-            $model->filterAuthor = $_POST['Book']['filterAuthor'];
-            $model->filterDateSinceSub = $_POST['Book']['filterDateSinceSub'];
-            $model->filterDateSince = strtotime(str_replace('/', '-', $_POST['Book']['filterDateSinceSub']));
-            if (isset($_POST['Book']['filterDateToSub'])) {
-                $model->filterDateToSub = $_POST['Book']['filterDateToSub'];
-                $model->filterDateTo = strtotime(str_replace('/', '-', $_POST['Book']['filterDateToSub']));
+            $this->redirect('index?filterName=' . $_POST['Book']['filterName'] .
+                '&filterAuthor=' . $_POST['Book']['filterAuthor'] .
+            '&filterDateSince=' . strtotime(str_replace('/', '-', $_POST['Book']['filterDateSinceSub'])) .
+                '&filterDateTo=' . strtotime(str_replace('/', '-', $_POST['Book']['filterDateToSub'])));
+        }
+
+        /**
+         * Не лучший исход...
+         */
+        if(isset($_GET['filterName'])){
+            $model->filterName = $_GET['filterName'];
+        }
+        if(isset($_GET['filterAuthor'])){
+            $model->filterAuthor = $_GET['filterAuthor'];
+        }
+        if(isset($_GET['filterDateSince'])){
+            $model->filterDateSince = $_GET['filterDateSince'];
+            if($_GET['filterDateSince'] != null) {
+                $model->filterDateSinceSub = Date('d/m/Y', (int)$_GET['filterDateSince']);
             }
         }
+        if(isset($_GET['filterDateTo'])){
+            $model->filterDateTo = $_GET['filterDateTo'];
+            if($_GET['filterDateTo'] != null) {
+                $model->filterDateToSub = Date('d/m/Y', (int)$_GET['filterDateTo']);
+            }
+        }
+
         $this->render('index', array(
             'model' => $model,
         ));

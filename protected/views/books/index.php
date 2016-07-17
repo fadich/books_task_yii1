@@ -70,21 +70,18 @@ if (Yii::app()->user->hasFlash('guest')): ?>
             <?php echo CHtml::submitButton('Искать'); ?>
         </div>
     </div>
+
     <?php $this->endWidget(); ?>
 
-    <?php if ($model->filterDateTo < 1) {
+    <?php
+    if ($model->filterDateTo < 1) {
         $model->filterDateTo = time() + time();
     }
-    if (isset($_GET['id']) && $_GET['id'] > 0){
-        $model->order = $_GET['id'];
-    } else {
-        $model->order = 1;
-    }
-    $orderLow = 5 * ($model->order - 1) + 1;
+    $limitLow = 5 * ($model->limit - 1);
     $books = Book::model()->findAllBySql("select * from book where status = " . Book::STATUS_ACTIVE .
         " and name like '%" . $model->filterName . "%' and author_id like '%" . $model->filterAuthor .
         "%' and date between '" . $model->filterDateSince . "' and '" . $model->filterDateTo . "'" .
-        "order by name limit " . $orderLow . ", " . 5);
+        "order by name limit " . $limitLow . ", " . 5);
     $i = 0; ?>
     <table border="1" rules="all" style="border: #0f0f0f">
         <tr style="background-color: #BBBBBB">
@@ -99,7 +96,7 @@ if (Yii::app()->user->hasFlash('guest')): ?>
         <?php foreach ($books as $book): ?>
             <tr>
                 <!--                <td>--><?php //echo $book->id ?><!--</td>-->    <!-- id в базе данных -->
-                <td><?php echo ++$i; ?></td>    <!-- Порядковый номер -->
+                <td><?php echo ++$i + 5 * ($model->limit - 1) . '.'; ?></td>    <!-- Порядковый номер -->
                 <td><?php echo $book->name ?></td>
                 <td><?php if ($book->preview != false): ?>
                         <div class="blokimg">
@@ -263,24 +260,74 @@ if (Yii::app()->user->hasFlash('guest')): ?>
         <?php endforeach; ?>
     </table>
 
-    <?php $size = sizeof($model->findAllByAttributes(array('status' => Book::STATUS_ACTIVE)));
+    <?php $size = sizeof($model->findAllBySql("select * from book where status = " . Book::STATUS_ACTIVE .
+        " and name like '%" . $model->filterName . "%' and author_id like '%" . $model->filterAuthor .
+        "%' and date between '" . $model->filterDateSince . "' and '" . $model->filterDateTo . "'"));
     $page = 1; ?>
     <div align="center">
-        <?php for ($i = 0; $i < $size; $i += 5): ?>
-            <?php if ($model->order != $page) {
-                echo CHtml::link($page, '/books_task/index.php/books/index/' . $page++) .
-                    '&nbsp;&nbsp;&nbsp;&nbsp;';
+        <?php $form = $this->beginWidget('CActiveForm', array(
+            'id' => 'filter-form',
+            'enableClientValidation' => true,
+            'clientOptions' => array(
+                'validateOnSubmit' => true,
+            ),
+        ));
+        for ($i = 0; $i < $size; $i += 5): ?>
+            <?php if ($model->limit != $page) {
+                echo CHtml::submitButton($page, array(
+                    'name' => 'page',
+                    'value' => $page,
+                    'class' => 'button',
+                ));
+                echo '&nbsp;';
+                $page++;
             } else {
-                echo $page++ . '&nbsp;&nbsp;&nbsp;&nbsp;';
-            }?>
-        <?php endfor; ?>
+                echo $page++ . '&nbsp;';
+            } ?>
+        <?php endfor;
+        $form = $this->endWidget(); ?>
     </div>
 </div>
 
 <style>
+    .button {
+        background-color: #BBBBBB;
+        border: none;
+        color: black;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 11px;
+    }
+
     /* Увеличение изображения */
     .blokimg {
         position: relative;
+
+    /* Модальное окно */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: -120px;
+        width: 100%;
+        height: 135%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .modal-content {
+        background-color: #f8f8f8;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 55%;
+    }
+
     }
 
     .overlay {
