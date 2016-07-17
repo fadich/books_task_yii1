@@ -110,7 +110,7 @@ if (Yii::app()->user->hasFlash('guest')): ?>
                             </div>
                             <a href="#contenedor<?= $i ?>">
                                 <?php echo '<img src="' .
-                                    substr($book->preview, 13) . '" id="imagenM1" width="75px"/>' ?>
+                                    substr($book->preview, 13) . '" id="imagenM1" class="image" width="75px"/>' ?>
                             </a>
                         </div>
                         <?php
@@ -294,12 +294,21 @@ if (Yii::app()->user->hasFlash('guest')): ?>
         background-color: #BBBBBB;
         border: none;
         color: black;
-        border-radius: 10px;
+        border-radius: 8px;
         padding: 5px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 11px;
+    }
+
+    .button:hover,
+    .button:focus {
+        background-color: #D0D0D0;
+        font-size: 11px;
+        border-radius: 25px;
+        text-decoration: none;
+        cursor: pointer;
     }
 
     /* Увеличение изображения */
