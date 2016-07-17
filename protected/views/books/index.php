@@ -229,7 +229,7 @@ if (Yii::app()->user->hasFlash('guest')): ?>
                                     </script>
                                     <style>
                                         .close<?= $book->id ?> {
-                                            color: #e06060;
+                                            color: #E06060;
                                             float: right;
                                             font-size: 28px;
                                             font-weight: bold;
@@ -237,7 +237,8 @@ if (Yii::app()->user->hasFlash('guest')): ?>
 
                                         .close<?= $book->id ?>:hover,
                                         .close<?= $book->id ?>:focus {
-                                            color: #ff2020;
+                                            color: #FF6060;
+                                            font-size: 30px;
                                             text-decoration: none;
                                             cursor: pointer;
                                         }
