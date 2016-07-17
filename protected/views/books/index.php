@@ -312,6 +312,16 @@ if (Yii::app()->user->hasFlash('guest')): ?>
         cursor: pointer;
     }
 
+    .image{
+        display: block; /*  Рисунок как блочный элемент */
+    }
+    .image:hover {
+        width: 70px;
+        border: solid;
+        border-width: 4px;
+        border-color: #222222;
+        border-radius: 5px;
+    }
     /* Увеличение изображения */
     .blokimg {
         position: relative;
@@ -356,8 +366,9 @@ if (Yii::app()->user->hasFlash('guest')): ?>
     }
 
     .overlay_container img {
-        background-color: #FFFFFF;
+        background-color: #222222;
         padding: 10px;
+        border-radius: 15px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
     }
@@ -385,6 +396,7 @@ if (Yii::app()->user->hasFlash('guest')): ?>
         margin: 15% auto;
         padding: 20px;
         border: 1px solid #888;
+        border-radius: 15px;
         width: 55%;
     }
 </style>
