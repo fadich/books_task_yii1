@@ -78,7 +78,7 @@ if (Yii::app()->user->hasFlash('guest')): ?>
     $books = Book::model()->findAllBySql("select * from book where status = " . Book::STATUS_ACTIVE .
         " and name like '%" . $model->filterName . "%' and author_id like '%" . $model->filterAuthor .
         "%' and date between '" . $model->filterDateSince . "' and '" . $model->filterDateTo . "'" .
-        "order by name");
+        "order by name limit 0, 50");
     $i = 0; ?>
     <table border="1" rules="all" style="border: #0f0f0f">
         <tr style="background-color: #BBBBBB">
@@ -161,15 +161,19 @@ if (Yii::app()->user->hasFlash('guest')): ?>
                                     } ?>
                                 </td>
                                 <td><br>
-                                    <div id="myModal<?= $book->id ?>" class="modal">
+                                    <div id="show<?= $book->id ?>" class="modal">
                                         <div class="modal-content">
-                                            <span class="close"></span>
+                                            <span class="close<?= $book->id ?>">X</span>
                                             <p>
                                             <table>
                                                 <tr>
-                                                    <td width="70px">
-                                                        <?php echo '<img src="' .
-                                                            substr($book->preview, 13) . '" width="270px"/>' ?>
+                                                    <td width="270px">
+                                                        <?php if ($book->preview != false) {
+                                                            echo '<img src="' .
+                                                                substr($book->preview, 13) . '" width="270px"/>';
+                                                        } else {
+                                                            echo '<p align="center">Нет изображения...</p>';
+                                                        } ?>
                                                     </td>
                                                     <td style="font-size: 18px;">
                                                         <table>
@@ -178,7 +182,7 @@ if (Yii::app()->user->hasFlash('guest')): ?>
                                                                     <?= 'Название книги: <strong>' . $book->name . '</strong>'?><br><br>
                                                                     <?= 'Автор: <strong>' . $book->getAuthor()->firstname ?>
                                                                     <?= $book->getAuthor()->lastname . '</strong>' ?><br><br>
-                                                                    <?= 'Дата выхода: <strong>' . date('d F Y', $book->date) . '</strong>' ?>
+                                                                    <?= 'Дата выхода книги: <strong>' . date('d F Y', $book->date) . '</strong>' ?>
                                                                     <br><br>
                                                                     <?= 'Дата добавления: <strong>' . date('d F Y', $book->date_create) . '</strong>' ?>
                                                                     <br><br>
@@ -195,30 +199,44 @@ if (Yii::app()->user->hasFlash('guest')): ?>
                                         </div>
                                     </div>
 
-                                    <a id="myBtn<?= $book->id ?>">[просм]</a>
+                                    <a id="showBtn<?= $book->id ?>">[просм]</a>
 
                                     <script>
-                                        var modal = document.getElementById("myModal<?= $book->id ?>");
+                                        var modal<?= $book->id ?> = document.getElementById("show<?= $book->id ?>");
 
-                                        var btn = document.getElementById("myBtn<?= $book->id ?>");
+                                        var btn<?= $book->id ?> = document.getElementById("showBtn<?= $book->id ?>");
 
-                                        var span = document.getElementsByClassName("close")[0];
+                                        var span<?= $book->id ?> = document.getElementsByClassName("close<?= $book->id ?>")[0];
 
-                                        btn.onclick = function () {
-                                            modal.style.display = "block";
+                                        btn<?= $book->id ?>.onclick = function () {
+                                            modal<?= $book->id ?>.style.display = "block";
                                         }
 
-                                        span.onclick = function () {
-                                            modal.style.display = "none";
+                                        span<?= $book->id ?>.onclick = function () {
+                                            modal<?= $book->id ?>.style.display = "none";
                                         }
 
-                                        window.onclick = function (event) {
-                                            if (event.target == modal) {
-                                                modal.style.display = "none";
+                                        window<?= $book->id ?>.onclick = function (event) {
+                                            if (event.target == modal<?= $book->id ?>) {
+                                                modal<?= $book->id ?>.style.display = "none";
                                             }
                                         }
                                     </script>
+                                    <style>
+                                        .close<?= $book->id ?> {
+                                            color: #e06060;
+                                            float: right;
+                                            font-size: 28px;
+                                            font-weight: bold;
+                                        }
 
+                                        .close<?= $book->id ?>:hover,
+                                        .close<?= $book->id ?>:focus {
+                                            color: #ff2020;
+                                            text-decoration: none;
+                                            cursor: pointer;
+                                        }
+                                    </style>
                                 </td>
                                 <td><br>
                                     <?php if (!Yii::app()->user->isGuest) {
@@ -281,28 +299,14 @@ if (Yii::app()->user->hasFlash('guest')): ?>
         height: 135%;
         overflow: auto;
         background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.6);
     }
 
     .modal-content {
-        background-color: #fefefe;
+        background-color: #f8f8f8;
         margin: 15% auto;
         padding: 20px;
         border: 1px solid #888;
         width: 55%;
-    }
-
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
     }
 </style>

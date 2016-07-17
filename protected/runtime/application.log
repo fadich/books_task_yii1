@@ -6502,3 +6502,18 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/books_task/index.php/books/index
 ---
+2016/07/17 07:56:35 [warning] [application] Не удалось присвоить небезопасный атрибут "image" класса "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (53)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 07:57:04 [warning] [application] Не удалось присвоить небезопасный атрибут "image" класса "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (53)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 07:58:53 [warning] [application] Не удалось присвоить небезопасный атрибут "image" класса "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (53)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 08:05:36 [warning] [application] Не удалось присвоить небезопасный атрибут "image" класса "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (53)
+in /var/www/html/books_task/index.php (13)
+2016/07/17 08:07:58 [warning] [application] Не удалось присвоить небезопасный атрибут "image" класса "Book".
+in /var/www/html/books_task/protected/controllers/BooksController.php (53)
+in /var/www/html/books_task/index.php (13)
