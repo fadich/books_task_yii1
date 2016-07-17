@@ -75,10 +75,16 @@ if (Yii::app()->user->hasFlash('guest')): ?>
     <?php if ($model->filterDateTo < 1) {
         $model->filterDateTo = time() + time();
     }
+    if (isset($_GET['id']) && $_GET['id'] > 0){
+        $model->order = $_GET['id'];
+    } else {
+        $model->order = 1;
+    }
+    $orderLow = 5 * ($model->order - 1) + 1;
     $books = Book::model()->findAllBySql("select * from book where status = " . Book::STATUS_ACTIVE .
         " and name like '%" . $model->filterName . "%' and author_id like '%" . $model->filterAuthor .
         "%' and date between '" . $model->filterDateSince . "' and '" . $model->filterDateTo . "'" .
-        "order by name limit 0, 50");
+        "order by name limit " . $orderLow . ", " . 5);
     $i = 0; ?>
     <table border="1" rules="all" style="border: #0f0f0f">
         <tr style="background-color: #BBBBBB">
@@ -179,9 +185,11 @@ if (Yii::app()->user->hasFlash('guest')): ?>
                                                         <table>
                                                             <tr>
                                                                 <td>
-                                                                    <?= 'Название книги: <strong>' . $book->name . '</strong>'?><br><br>
+                                                                    <?= 'Название книги: <strong>' . $book->name . '</strong>' ?>
+                                                                    <br><br>
                                                                     <?= 'Автор: <strong>' . $book->getAuthor()->firstname ?>
-                                                                    <?= $book->getAuthor()->lastname . '</strong>' ?><br><br>
+                                                                    <?= $book->getAuthor()->lastname . '</strong>' ?>
+                                                                    <br><br>
                                                                     <?= 'Дата выхода книги: <strong>' . date('d F Y', $book->date) . '</strong>' ?>
                                                                     <br><br>
                                                                     <?= 'Дата добавления: <strong>' . date('d F Y', $book->date_create) . '</strong>' ?>
@@ -254,6 +262,19 @@ if (Yii::app()->user->hasFlash('guest')): ?>
             </tr>
         <?php endforeach; ?>
     </table>
+
+    <?php $size = sizeof($model->findAllByAttributes(array('status' => Book::STATUS_ACTIVE)));
+    $page = 1; ?>
+    <div align="center">
+        <?php for ($i = 0; $i < $size; $i += 5): ?>
+            <?php if ($model->order != $page) {
+                echo CHtml::link($page, '/books_task/index.php/books/index/' . $page++) .
+                    '&nbsp;&nbsp;&nbsp;&nbsp;';
+            } else {
+                echo $page++ . '&nbsp;&nbsp;&nbsp;&nbsp;';
+            }?>
+        <?php endfor; ?>
+    </div>
 </div>
 
 <style>

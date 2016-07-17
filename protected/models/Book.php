@@ -25,6 +25,7 @@ class Book extends CActiveRecord
     public $filterDateTo;
     public $filterDateSinceSub;
     public $filterDateToSub;
+    public $order;
 
     /**
      * Returns the static model of the specified AR class.
@@ -54,7 +55,7 @@ class Book extends CActiveRecord
         return array(
             array('name, date, author_id', 'required'),
             array('status, date_create, date_update, author_id, filterAuthor, filterDateSince, filterDateTo,
-            filterDateSinceSub, filterDateToSub',
+            filterDateSinceSub, filterDateToSub, order',
                 'numerical', 'integerOnly' => true),
             array('name, date, preview, filterName', 'length', 'max' => 255, 'min' => 6),
             // The following rule is used by search().
